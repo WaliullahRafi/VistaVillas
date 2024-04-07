@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "cover_image": "https://example.com/image1.jpg",
+    "estate_title": "Spacious Family Home",
+    "segment_name": "Single-family homes",
+    "description": "Large family home with plenty of room for everyone, located in a quiet suburban neighborhood.",
+    "price": 500000,
+    "status": "sale",
+    "area": "3000 sq ft",
+    "location": "Green Meadows",
+    "facilities": ["living room", "backyard", "garage", "playroom"]
+  },
+  {
+    "id": 2,
+    "cover_image": "https://example.com/image2.jpg",
+    "estate_title": "Modern Townhouse",
+    "segment_name": "Townhouses",
+    "description": "Stylish townhouse with contemporary design and urban convenience.",
+    "price": 700000,
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "City Center District",
+    "facilities": ["living room", "rooftop terrace", "garage", "garden"]
+  },
+  {
+    "id": 3,
+    "cover_image": "https://example.com/image3.jpg",
+    "estate_title": "Urban Apartment Living",
+    "segment_name": "Apartments",
+    "description": "Cosy apartment located in the heart of the city, perfect for urban professionals.",
+    "price": 1000000,
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "Downtown Plaza",
+    "facilities": ["living room", "gym", "swimming pool", "security"]
+  },
+  {
+    "id": 4,
+    "cover_image": "https://example.com/image4.jpg",
+    "estate_title": "Student Dormitory",
+    "segment_name": "Student housing",
+    "description": "Convenient student dormitory close to campus with shared facilities and study areas.",
+    "price": 1500,
+    "status": "rent",
+    "area": "400 sq ft (per room)",
+    "location": "University District",
+    "facilities": ["bedroom", "study area", "common room", "laundry"]
+  },
+  {
+    "id": 5,
+    "cover_image": "https://example.com/image5.jpg",
+    "estate_title": "Senior Living Community",
+    "segment_name": "Senior living communities",
+    "description": "Retirement community offering independent living with amenities and social activities.",
+    "price": 300000,
+    "status": "sale",
+    "area": "1500 sq ft",
+    "location": "Sunset Gardens",
+    "facilities": [
+      "bedroom",
+      "common areas",
+      "dining hall",
+      "healthcare services"
+    ]
+  },
+  {
+    "id": 6,
+    "cover_image": "https://example.com/image6.jpg",
+    "estate_title": "Beachfront Vacation Rental",
+    "segment_name": "Vacation rentals",
+    "description": "Charming beachfront villa perfect for a relaxing vacation getaway.",
+    "price": 2000,
+    "status": "rent",
+    "area": "2000 sq ft",
+    "location": "Sunny Shores Beach",
+    "facilities": ["living room", "beach access", "terrace", "BBQ area"]
+  },
+  {
+    "id": 7,
+    "cover_image": "https://example.com/image7.jpg",
+    "estate_title": "Luxury Retirement Villa",
+    "segment_name": "Senior living communities",
+    "description": "Exclusive retirement villa offering luxury living for seniors with resort-style amenities.",
+    "price": 1000000,
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Golden Oaks Retirement Village",
+    "facilities": ["bedroom", "spa", "fitness center", "restaurant"]
+  },
+  {
+    "id": 8,
+    "cover_image": "https://example.com/image8.jpg",
+    "estate_title": "Downtown Loft Apartment",
+    "segment_name": "Apartments",
+    "description": "Trendy loft apartment in the heart of downtown with industrial-chic design.",
+    "price": 1200000,
+    "status": "sale",
+    "area": "1800 sq ft",
+    "location": "Art District",
+    "facilities": ["living room", "rooftop terrace", "gym", "parking"]
+  },
+  {
+    "id": 9,
+    "cover_image": "https://example.com/image9.jpg",
+    "estate_title": "Family-friendly Apartment Complex",
+    "segment_name": "Apartments",
+    "description": "Family-friendly apartment complex with playgrounds and communal spaces.",
+    "price": 800000,
+    "status": "rent",
+    "area": "1500 sq ft",
+    "location": "Suburban Haven",
+    "facilities": ["living room", "playground", "swimming pool", "security"]
+  }
+]
