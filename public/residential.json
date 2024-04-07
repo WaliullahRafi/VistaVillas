@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "cover_image": "https://example.com/image1.jpg",
+    "cover_image": "https://i.ibb.co/zH1q8gZ/3d-electric-car-building.jpg",
     "estate_title": "Spacious Family Home",
     "segment_name": "Single-family homes",
     "description": "Large family home with plenty of room for everyone, located in a quiet suburban neighborhood.",
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "cover_image": "https://example.com/image2.jpg",
+    "cover_image": "https://i.ibb.co/LvJ9VG5/4908.jpg",
     "estate_title": "Modern Townhouse",
     "segment_name": "Townhouses",
     "description": "Stylish townhouse with contemporary design and urban convenience.",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "cover_image": "https://example.com/image3.jpg",
+    "cover_image": "https://i.ibb.co/Xz7wHqg/hero.jpg",
     "estate_title": "Urban Apartment Living",
     "segment_name": "Apartments",
     "description": "Cosy apartment located in the heart of the city, perfect for urban professionals.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "cover_image": "https://example.com/image4.jpg",
+    "cover_image": "https://i.ibb.co/jLz8w38/img1.jpg",
     "estate_title": "Student Dormitory",
     "segment_name": "Student housing",
     "description": "Convenient student dormitory close to campus with shared facilities and study areas.",
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "cover_image": "https://example.com/image5.jpg",
+    "cover_image": "https://i.ibb.co/QYCC4Yn/img2.jpg",
     "estate_title": "Senior Living Community",
     "segment_name": "Senior living communities",
     "description": "Retirement community offering independent living with amenities and social activities.",
@@ -66,7 +66,7 @@
   },
   {
     "id": 6,
-    "cover_image": "https://example.com/image6.jpg",
+    "cover_image": "https://i.ibb.co/D7TkSFP/img3.jpg",
     "estate_title": "Beachfront Vacation Rental",
     "segment_name": "Vacation rentals",
     "description": "Charming beachfront villa perfect for a relaxing vacation getaway.",
@@ -78,7 +78,7 @@
   },
   {
     "id": 7,
-    "cover_image": "https://example.com/image7.jpg",
+    "cover_image": "https://i.ibb.co/2ZnLgdL/img4.jpg",
     "estate_title": "Luxury Retirement Villa",
     "segment_name": "Senior living communities",
     "description": "Exclusive retirement villa offering luxury living for seniors with resort-style amenities.",
@@ -90,7 +90,7 @@
   },
   {
     "id": 8,
-    "cover_image": "https://example.com/image8.jpg",
+    "cover_image": "https://i.ibb.co/D9hXqN6/img5.jpg",
     "estate_title": "Downtown Loft Apartment",
     "segment_name": "Apartments",
     "description": "Trendy loft apartment in the heart of downtown with industrial-chic design.",
@@ -102,7 +102,7 @@
   },
   {
     "id": 9,
-    "cover_image": "https://example.com/image9.jpg",
+    "cover_image": "https://i.ibb.co/QpV1k7F/img6.jpg",
     "estate_title": "Family-friendly Apartment Complex",
     "segment_name": "Apartments",
     "description": "Family-friendly apartment complex with playgrounds and communal spaces.",

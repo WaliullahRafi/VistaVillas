@@ -1,11 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { FaUserCircle } from "react-icons/fa";
 
 function Navbar() {
   const navLinks = (
     <>
       <li>
         <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/plans">Plans</NavLink>
       </li>
       <li>
         <NavLink to="/our-service">Our Service</NavLink>
@@ -38,15 +42,22 @@ function Navbar() {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 space-y-4"
-          >{navLinks}</ul>
+          >
+            {navLinks}
+          </ul>
         </div>
         <a className="text-2xl font-bold">VistaVillas</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-4">{navLinks}</ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-4">
+        <Link to="/login-page" className="btn">
+          Login
+        </Link>
+        <div>
+          <FaUserCircle className="text-3xl cursor-pointer" />
+        </div>
       </div>
     </div>
   );
