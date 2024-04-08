@@ -8,7 +8,6 @@ function Plans() {
     fetch("/residential.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setPlans(data);
       });
   }, []);

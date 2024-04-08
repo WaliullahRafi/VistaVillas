@@ -1,10 +1,32 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { HiEye } from "react-icons/hi";
 import { HiEyeOff } from "react-icons/hi";
+import { AuthContext } from "../Provider/AuthProvider";
 
 function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
+
+  const { createUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const name = form.get("name");
+    const email = form.get("email");
+    const password = form.get("password");
+    console.log(name, email, password);
+
+    createUser(email, password)
+      .then((res) => {
+        console.log(res.user);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
 
   return (
     <div className="hero p-12">
@@ -14,7 +36,7 @@ function RegisterPage() {
           <p className="py-6">Please enter your details</p>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body">
+          <form onSubmit={handleRegister} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>

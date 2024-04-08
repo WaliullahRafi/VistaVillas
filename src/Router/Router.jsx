@@ -7,6 +7,7 @@ import AboutUs from "../Pages/AboutUs";
 import LoginPage from "../Pages/LoginPage";
 import RegisterPage from "../Pages/RegisterPage";
 import Plans from "../Pages/Plans";
+import ViewProperty from "../Pages/ViewProperty";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/plans",
         element: <Plans />,
+      },
+      {
+        path: "/plans/view-property/:id",
+        element: <ViewProperty />,
       },
       {
         path: "/our-service",

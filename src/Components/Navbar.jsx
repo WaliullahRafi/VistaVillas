@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
+import { AuthContext } from "../Provider/AuthProvider";
 
 function Navbar() {
   const navLinks = (
@@ -19,6 +20,19 @@ function Navbar() {
       </li>
     </>
   );
+
+  const { user, logOutUser } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOutUser()
+      .then(() => {
+        console.log("Logged out successfully");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   return (
     <div className="navbar bg-base-100 py-6">
       <div className="navbar-start">
@@ -52,9 +66,16 @@ function Navbar() {
         <ul className="menu menu-horizontal px-1 gap-4">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-4">
-        <Link to="/login-page" className="btn">
-          Login
-        </Link>
+        {user ? (
+          <Link to="/login-page" onClick={handleLogOut} className="btn">
+            Log Out
+          </Link>
+        ) : (
+          ""
+        )}
+        {/* <Link to="/login-page" onClick={handleLogOut} className="btn">
+          Log Out
+        </Link> */}
         <div>
           <FaUserCircle className="text-3xl cursor-pointer" />
         </div>
