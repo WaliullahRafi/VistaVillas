@@ -1,14 +1,19 @@
 import React, { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { HiEye } from "react-icons/hi";
 import { HiEyeOff } from "react-icons/hi";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Helmet } from "react-helmet";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
+  const [loginError, setLoginError] = useState("");
 
   const { loginUser } = useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -20,15 +25,20 @@ function LoginPage() {
     loginUser(email, password)
       .then((res) => {
         console.log(res.user);
-        navigate("/");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
+        setLoginError(error.message);
+        toast.warn(loginError);
       });
   };
 
   return (
     <div className="hero py-12">
+      <Helmet>
+        <title>Login - Page</title>
+      </Helmet>
       <div className="hero-content flex-col">
         <div className="text-center">
           <h1 className="text-5xl font-bold">Login Now !</h1>
@@ -85,6 +95,7 @@ function LoginPage() {
                 Sign Up
               </Link>
             </span>
+            <ToastContainer />
           </form>
         </div>
       </div>

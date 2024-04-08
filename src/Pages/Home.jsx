@@ -1,14 +1,14 @@
 import React from "react";
 import Hero from "../Components/Hero";
-import AboutUs from "./AboutUs";
-import Plans from "./Plans";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
-    <div>
+    <div className="-z-10">
+      <Helmet>
+        <title>VistaVillas | Home - page</title>
+      </Helmet>
       <Hero />
-      <Plans />
-      <AboutUs />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Helmet } from "react-helmet";
 
 function Hero() {
   return (

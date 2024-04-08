@@ -9,7 +9,7 @@
     "status": "Sale",
     "area": "3000 sq ft",
     "location": "Green Meadows",
-    "facilities": ["living room", "backyard", "garage", "playroom"]
+    "facilities": ["living room", "backyard", "garage", "playroom", "security"]
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "status": "Sale",
     "area": "2500 sq ft",
     "location": "City Center District",
-    "facilities": ["living room", "rooftop terrace", "garage", "garden"]
+    "facilities": ["living room", "rooftop terrace", "garage", "garden", "spa"]
   },
   {
     "id": 3,
@@ -33,7 +33,13 @@
     "status": "Rent",
     "area": "1200 sq ft",
     "location": "Downtown Plaza",
-    "facilities": ["living room", "gym", "swimming pool", "security"]
+    "facilities": [
+      "living room",
+      "gym",
+      "swimming pool",
+      "security",
+      "playroom"
+    ]
   },
   {
     "id": 4,
@@ -45,7 +51,7 @@
     "status": "Rent",
     "area": "400 sq ft (per room)",
     "location": "University District",
-    "facilities": ["bedroom", "study area", "common room", "laundry"]
+    "facilities": ["bedroom", "study area", "common room", "laundry", "gym"]
   },
   {
     "id": 5,
@@ -61,7 +67,8 @@
       "bedroom",
       "common areas",
       "dining hall",
-      "healthcare services"
+      "healthcare services",
+      "laundry"
     ]
   },
   {
@@ -74,7 +81,13 @@
     "status": "Rent",
     "area": "2000 sq ft",
     "location": "Sunny Shores Beach",
-    "facilities": ["living room", "beach access", "terrace", "BBQ area"]
+    "facilities": [
+      "living room",
+      "beach access",
+      "terrace",
+      "BBQ area",
+      "healthcare services"
+    ]
   },
   {
     "id": 7,
@@ -86,7 +99,13 @@
     "status": "Sale",
     "area": "2500 sq ft",
     "location": "Golden Oaks Retirement Village",
-    "facilities": ["bedroom", "swimming pool", "fitness center", "restaurant"]
+    "facilities": [
+      "bedroom",
+      "swimming pool",
+      "fitness center",
+      "restaurant",
+      "terrace"
+    ]
   },
   {
     "id": 8,
@@ -98,7 +117,13 @@
     "status": "Sale",
     "area": "1800 sq ft",
     "location": "Art District",
-    "facilities": ["living room", "rooftop terrace", "gym", "parking"]
+    "facilities": [
+      "living room",
+      "rooftop terrace",
+      "gym",
+      "parking",
+      "security"
+    ]
   },
   {
     "id": 9,
@@ -110,6 +135,12 @@
     "status": "Rent",
     "area": "1500 sq ft",
     "location": "Suburban Haven",
-    "facilities": ["living room", "playground", "spa", "security"]
+    "facilities": [
+      "living room",
+      "playground",
+      "spa",
+      "security",
+      "rooftop terrace"
+    ]
   }
 ]

@@ -8,6 +8,7 @@ import LoginPage from "../Pages/LoginPage";
 import RegisterPage from "../Pages/RegisterPage";
 import Plans from "../Pages/Plans";
 import ViewProperty from "../Pages/ViewProperty";
+import PrivetRoute from "./PrivetRoute";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/plans/view-property/:id",
-        element: <ViewProperty />,
+        element: (
+          <PrivetRoute>
+            <ViewProperty />
+          </PrivetRoute>
+        ),
       },
       {
         path: "/our-service",

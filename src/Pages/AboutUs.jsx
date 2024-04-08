@@ -1,9 +1,14 @@
 import React from "react";
-import Img from "../assets/hero.jpg";
+import Img from "../assets/img2.jpg";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
   return (
     <div className="hero min-h-[60vh]">
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       <div className="hero-content flex-col lg:flex-row">
         <img src={Img} className="rounded-lg shadow-2xl w-[30rem] h-[30rem]" />
         <div className="ml-12">
@@ -19,7 +24,9 @@ function AboutUs() {
             Welcome to [VistaVillas] - where your journey to home ownership
             begins.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <Link to="/plans" className="btn btn-primary">
+            Get Started
+          </Link>
         </div>
       </div>
     </div>

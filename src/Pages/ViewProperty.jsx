@@ -56,6 +56,7 @@ function ViewProperty() {
           <li className="font-medium list-disc">{facilities?.[1]}</li>
           <li className="font-medium list-disc">{facilities?.[2]}</li>
           <li className="font-medium list-disc">{facilities?.[3]}</li>
+          <li className="font-medium list-disc">{facilities?.[4]}</li>
         </ul>
       </div>
       <div className="flex items-center justify-between">

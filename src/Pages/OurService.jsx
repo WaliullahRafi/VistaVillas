@@ -1,7 +1,15 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function OurService() {
-  return <div>Our service</div>;
+  return (
+    <div>
+      <Helmet>
+        <title>Our - Service</title>
+      </Helmet>
+      Our service
+    </div>
+  );
 }
 
 export default OurService;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PlansCard from "../Components/PlansCard";
+import { Helmet } from "react-helmet";
 
 function Plans() {
   const [plans, setPlans] = useState([]);
@@ -14,6 +15,9 @@ function Plans() {
 
   return (
     <div className="py-12 space-y-8">
+      <Helmet>
+        <title>Plans - page</title>
+      </Helmet>
       <div>
         {" "}
         <span className="text-xl font-semibold text-orange-600">Our Plans</span>

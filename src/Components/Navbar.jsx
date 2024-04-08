@@ -55,29 +55,56 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 space-y-4"
+            className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 space-y-4 z-10"
           >
             {navLinks}
           </ul>
         </div>
-        <a className="text-2xl font-bold">VistaVillas</a>
+        <Link to="/" className="text-2xl font-bold">
+          VistaVillas
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-4">{navLinks}</ul>
       </div>
       <div className="navbar-end gap-4">
-        {user ? (
-          <Link to="/login-page" onClick={handleLogOut} className="btn">
-            Log Out
-          </Link>
-        ) : (
-          ""
-        )}
-        {/* <Link to="/login-page" onClick={handleLogOut} className="btn">
-          Log Out
-        </Link> */}
-        <div>
-          <FaUserCircle className="text-3xl cursor-pointer" />
+        <div className="flex-none z-20">
+          <div className="dropdown dropdown-end">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost btn-circle avatar"
+            >
+              <div className="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                />
+              </div>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 space-y-4"
+            >
+              <li>
+                <a className="justify-between">User Profile</a>
+              </li>
+              <li>
+                <a>Update Profile</a>
+              </li>
+              <li>
+                {user ? (
+                  <Link onClick={handleLogOut} className="btn btn-sm">
+                    Log Out
+                  </Link>
+                ) : (
+                  <Link to="/login-page" className="btn btn-sm">
+                    Log In
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

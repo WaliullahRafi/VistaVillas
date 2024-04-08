@@ -3,9 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { HiEye } from "react-icons/hi";
 import { HiEyeOff } from "react-icons/hi";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Helmet } from "react-helmet";
+import { toast } from "react-toastify";
 
 function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
+  const [registerError, setRegisterError] = useState("");
 
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -25,11 +28,16 @@ function RegisterPage() {
       })
       .catch((error) => {
         console.error(error);
+        setRegisterError(error.message);
+        toast.warn(registerError);
       });
   };
 
   return (
     <div className="hero p-12">
+      <Helmet>
+        <title>Registration - page</title>
+      </Helmet>
       <div className="hero-content flex-col">
         <div className="text-center">
           <h1 className="text-5xl font-bold">Register Now !</h1>
