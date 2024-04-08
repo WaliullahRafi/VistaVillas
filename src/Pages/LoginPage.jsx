@@ -11,7 +11,8 @@ import "react-toastify/dist/ReactToastify.css";
 function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
 
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, signInGoogle, signInWithGithub } = useContext(AuthContext);
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -46,6 +47,28 @@ function LoginPage() {
       .catch((error) => {
         console.error(error);
         toast.error(error.message);
+      });
+  };
+
+  const handleGoogleSignIn = () => {
+    signInGoogle()
+      .then((res) => {
+        console.log(res.user);
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  const handleGithubSignIn = () => {
+    signInWithGithub()
+      .then((res) => {
+        console.log(res.user);
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
       });
   };
 
@@ -110,6 +133,20 @@ function LoginPage() {
                 Sign Up
               </Link>
             </span>
+            <div className="flex items-center gap-2 justify-center">
+              <button
+                onClick={handleGoogleSignIn}
+                className="btn bg-green-600 text-white"
+              >
+                Google
+              </button>
+              <button
+                onClick={handleGithubSignIn}
+                className="btn bg-gray-900 text-white"
+              >
+                Github
+              </button>
+            </div>
           </form>
         </div>
       </div>

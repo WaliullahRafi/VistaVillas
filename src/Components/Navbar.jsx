@@ -92,7 +92,7 @@ function Navbar() {
                 <a className="justify-between">User Profile</a>
               </li>
               <li>
-                <a>Update Profile</a>
+                <NavLink to="/update-profile">Update Profile</NavLink>
               </li>
               <li>
                 {user ? (

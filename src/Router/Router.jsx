@@ -9,6 +9,7 @@ import RegisterPage from "../Pages/RegisterPage";
 import Plans from "../Pages/Plans";
 import ViewProperty from "../Pages/ViewProperty";
 import PrivetRoute from "./PrivetRoute";
+import UpdateProfile from "../Pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/register-page",
         element: <RegisterPage />,
+      },
+      {
+        path: "/update-profile",
+        element: <UpdateProfile />,
       },
       {
         path: "/plans",
