@@ -4,7 +4,9 @@ import { HiEye } from "react-icons/hi";
 import { HiEyeOff } from "react-icons/hi";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Helmet } from "react-helmet";
-import { toast } from "react-toastify";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -21,15 +23,32 @@ function RegisterPage() {
     const password = form.get("password");
     console.log(name, email, password);
 
+    // setRegisterError("");
+
+    if (password.length < 6) {
+      toast.warn("Password should be 6 characters or longer");
+      return;
+    }
+
+    if (!/[a-z]/.test(password)) {
+      toast.warn("Password should have 1 Small Letter");
+      return;
+    }
+
+    if (!/[A-Z]/.test(password)) {
+      toast.warn("Password should have 1 Capital Letter");
+      return;
+    }
+
     createUser(email, password)
       .then((res) => {
         console.log(res.user);
         navigate("/");
+        toast.success("Successfully Registered Account");
       })
       .catch((error) => {
         console.error(error);
-        setRegisterError(error.message);
-        toast.warn(registerError);
+        toast.error(error.message);
       });
   };
 
@@ -53,6 +72,18 @@ function RegisterPage() {
                 name="name"
                 type="text"
                 placeholder="name"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Photo URL</span>
+              </label>
+              <input
+                name="image"
+                type="text"
+                placeholder="image"
                 className="input input-bordered"
                 required
               />
@@ -90,7 +121,7 @@ function RegisterPage() {
               </div>
               <label className="label">
                 <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
+                  {registerError}
                 </a>
               </label>
             </div>
@@ -109,6 +140,7 @@ function RegisterPage() {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

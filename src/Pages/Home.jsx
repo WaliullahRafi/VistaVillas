@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 function Home() {
   return (
-    <div className="-z-10">
+    <div>
       <Helmet>
         <title>VistaVillas | Home - page</title>
       </Helmet>

@@ -4,12 +4,12 @@ import { HiEye } from "react-icons/hi";
 import { HiEyeOff } from "react-icons/hi";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Helmet } from "react-helmet";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
-  const [loginError, setLoginError] = useState("");
 
   const { loginUser } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -22,15 +22,30 @@ function LoginPage() {
     const password = form.get("password");
     console.log(email, password);
 
+    if (password.length < 6) {
+      toast.warn("Password should be 6 characters or longer");
+      return;
+    }
+
+    if (!/[a-z]/.test(password)) {
+      toast.warn("Password should have 1 Small Letter");
+      return;
+    }
+
+    if (!/[A-Z]/.test(password)) {
+      toast.warn("Password should have 1 Capital Letter");
+      return;
+    }
+
     loginUser(email, password)
       .then((res) => {
         console.log(res.user);
         navigate(location?.state ? location.state : "/");
+        toast.success("Successfully Logged In");
       })
       .catch((error) => {
         console.error(error);
-        setLoginError(error.message);
-        toast.warn(loginError);
+        toast.error(error.message);
       });
   };
 
@@ -95,10 +110,10 @@ function LoginPage() {
                 Sign Up
               </Link>
             </span>
-            <ToastContainer />
           </form>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

@@ -64,9 +64,14 @@ function ViewProperty() {
           <span className="mr-2">Location:</span>
           {location}
         </span>
-        <Link to="/plans" className="btn bg-gray-600 text-white">
-          Go Back
-        </Link>
+        <div>
+          <button className="btn bg-orange-600 text-white mr-4">
+            {status === "Rent" ? "Rent Now" : "Buy Now"}
+          </button>
+          <Link to="/plans" className="btn bg-gray-600 text-white">
+            Go Back
+          </Link>
+        </div>
       </div>
     </div>
   );

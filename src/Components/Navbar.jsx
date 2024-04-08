@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { AuthContext } from "../Provider/AuthProvider";
 
@@ -22,11 +22,13 @@ function Navbar() {
   );
 
   const { user, logOutUser } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleLogOut = () => {
     logOutUser()
       .then(() => {
         console.log("Logged out successfully");
+        navigate("/login-page");
       })
       .catch((error) => {
         console.error(error);
