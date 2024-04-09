@@ -20,12 +20,14 @@ function Plans() {
       </Helmet>
       <div data-aos="fade-right">
         {" "}
-        <span className="text-xl font-semibold text-orange-600">Our Plans</span>
-        <h2 className="text-4xl font-bold text-blue-600 mt-2">
+        <span className="md:text-xl font-semibold text-orange-600">
+          Our Plans
+        </span>
+        <h2 className="text-2xl lg:text-4xl font-bold text-blue-600 mt-2">
           Popular Residences<span className="text-orange-600">.</span>
         </h2>
       </div>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {plans.map((plan, index) => (
           <PlansCard key={index} plan={plan} />
         ))}

@@ -79,7 +79,7 @@ function LoginPage() {
       </Helmet>
       <div className="hero-content flex-col">
         <div className="text-center" data-aos="fade-down">
-          <h1 className="text-5xl font-bold">Login Now !</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">Login Now !</h1>
           <p className="py-6">Please enter your details</p>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

@@ -7,7 +7,7 @@ import Review from "./Review";
 
 function Home() {
   return (
-    <div>
+    <div className="px-4">
       <Helmet>
         <title>Home page</title>
       </Helmet>

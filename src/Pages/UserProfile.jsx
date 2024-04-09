@@ -6,7 +6,7 @@ function UserProfile() {
   const { user } = useContext(AuthContext);
 
   return (
-    <div className="flex items-center justify-center w-full h-[70vh]">
+    <div className="flex items-center justify-center w-full h-[70vh] px-4">
       <Helmet>
         <title>User Profile</title>
       </Helmet>
@@ -29,7 +29,7 @@ function UserProfile() {
           </p>
         </div>
         <div
-          className="flex items-center justify-between w-1/2"
+          className="flex items-center justify-between gap-6 md:gap-0 md:w-1/2"
           data-aos="flip-up"
         >
           <div>

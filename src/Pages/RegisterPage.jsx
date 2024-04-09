@@ -50,16 +50,16 @@ function RegisterPage() {
   };
 
   return (
-    <div className="hero p-12">
+    <div className="hero">
       <Helmet>
         <title>Registration - page</title>
       </Helmet>
-      <div className="hero-content flex-col">
+      <div className="flex flex-col">
         <div className="text-center" data-aos="fade-down">
-          <h1 className="text-5xl font-bold">Register Now !</h1>
+          <h1 className="text-3xl md:text-5xl font-bold">Register Now !</h1>
           <p className="py-6">Please enter your details</p>
         </div>
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card w-full shadow-2xl bg-base-100 ">
           <form
             onSubmit={handleRegister}
             className="card-body"

@@ -10,9 +10,9 @@ function AboutUs() {
         <title>About Us</title>
       </Helmet>
       <div className="hero-content flex-col lg:flex-row">
-        <img src={Img} className="rounded-lg shadow-2xl w-[25rem] h-[30rem]" data-aos="fade-right" />
-        <div className="ml-12" data-aos="fade-left">
-          <h1 className="text-5xl font-bold leading-[140%]">
+        <img src={Img} className="rounded-lg shadow-2xl md:w-[25rem] h-[30rem]" data-aos="fade-right" />
+        <div className="md:ml-12" data-aos="fade-left">
+          <h1 className="text-2xl md:text-5xl font-bold leading-[140%]">
             Our Commitment: <br />
             Elevating the Standard of Residential Living
           </h1>

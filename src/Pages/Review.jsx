@@ -30,29 +30,26 @@ function Review() {
       </Helmet>
 
       <SwiperSlide>
-        <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
-          <div
-            className="p-12 bg-base-100 text-center space-y-8"
-            data-aos="fade-right"
-          >
-            <div className="w-[16rem] h-[20rem]">
-              <img className="w-full h-full rounded-2xl" src={Rev1} alt="" />
+        <div className="grid md:grid-cols-2 items-center justify-center p-20 h-[70vh] w-full text-center my-14 my:mt-0" data-aos="zoom-in">
+          <div className="space-y-6 flex flex-col items-center justify-center w-full p-12 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+            <div className="w-[7rem] h-[7rem] rounded-full overflow-hidden border-none">
+              <img src={Rev1} alt="" />
             </div>
-            <h2 className="text-xl font-semibold text-orange-600">
-              Daniel Anderson
-            </h2>
-          </div>
-          <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-gray-700" data-aos="fade-down">
+            <h2 className="mt-8 md:mt-0 text-xl md:text-3xl font-bold text-gray-600">
               Customer Reviews
             </h2>
-            <div className="p-8 relative" data-aos="zoom-in">
+            <h3 className="text-xl md:text-3xl text-gray-600 font-bold">
+              User Name
+            </h3>
+
+            <div className="p-8 relative">
               <FaQuoteLeft className="absolute left-0 top-0 text-2xl text-orange-600" />
-              <p className="text-gray-600 font-medium">
-                At its core, VistaVillas offers a sanctuary of comfort and
-                serenity amidst the hustle and bustle of modern life, providing
-                a refuge where individuals can retreat, recharge, and rejuvenate
-                their spirits.
+              <p className="text-gray-600 md:font-medium">
+                From the charming Victorian-era homes adorned with ornate
+                detailing to the minimalist modernist dwellings characterized by
+                clean lines and open spaces, every residential house reflects
+                the aspirations, values, and aesthetic sensibilities of its
+                inhabitants.
               </p>
               <FaQuoteRight className="absolute right-0 bottom-0 text-2xl text-orange-600" />
             </div>
@@ -61,30 +58,26 @@ function Review() {
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
-          <div
-            className="p-12 bg-base-100 text-center space-y-8"
-            data-aos="fade-right"
-          >
-            <div className="w-[16rem] h-[20rem]">
-              <img className="w-full h-full rounded-2xl" src={Rev2} alt="" />
+        <div className="grid md:grid-cols-2 items-center justify-center p-20 h-[70vh] w-full text-center my-14 my:mt-0" data-aos="zoom-in">
+          <div className="space-y-6 flex flex-col items-center justify-center w-full p-12 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+            <div className="w-[7rem] h-[7rem] rounded-full overflow-hidden border-none">
+              <img src={Rev2} alt="" />
             </div>
-            <h2 className="text-xl font-semibold text-orange-600">
-              Michael Smith
-            </h2>
-          </div>
-          <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-gray-700" data-aos="fade-down">
+            <h2 className="mt-8 md:mt-0 text-xl md:text-3xl font-bold text-gray-600">
               Customer Reviews
             </h2>
-            <div className="p-8 relative" data-aos="zoom-in">
+            <h3 className="text-xl md:text-3xl text-gray-600 font-bold">
+              User Name
+            </h3>
+
+            <div className="p-8 relative">
               <FaQuoteLeft className="absolute left-0 top-0 text-2xl text-orange-600" />
-              <p className="text-gray-600 font-medium">
-                From Mediterranean-inspired villas adorned with intricate
-                detailing to sleek modernist residences characterized by clean
-                lines and expansive windows, every property within the
-                VistaVillas portfolio is a masterpiece of design, craftsmanship,
-                and luxury.
+              <p className="text-gray-600 md:font-medium">
+                From the charming Victorian-era homes adorned with ornate
+                detailing to the minimalist modernist dwellings characterized by
+                clean lines and open spaces, every residential house reflects
+                the aspirations, values, and aesthetic sensibilities of its
+                inhabitants.
               </p>
               <FaQuoteRight className="absolute right-0 bottom-0 text-2xl text-orange-600" />
             </div>
@@ -93,25 +86,21 @@ function Review() {
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
-          <div
-            className="p-12 bg-base-100 text-center space-y-8"
-            data-aos="fade-right"
-          >
-            <div className="w-[16rem] h-[20rem]">
-              <img className="w-full h-full rounded-2xl" src={Rev3} alt="" />
+        <div className="grid md:grid-cols-2 items-center justify-center p-20 h-[70vh] w-full text-center my-14 my:mt-0" data-aos="zoom-in">
+          <div className="space-y-6 flex flex-col items-center justify-center w-full p-12 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+            <div className="w-[7rem] h-[7rem] rounded-full overflow-hidden border-none">
+              <img src={Rev3} alt="" />
             </div>
-            <h2 className="text-xl font-semibold text-orange-600">
-              Sophia Rodriguez
-            </h2>
-          </div>
-          <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-gray-700" data-aos="fade-down">
+            <h2 className="mt-8 md:mt-0 text-xl md:text-3xl font-bold text-gray-600">
               Customer Reviews
             </h2>
-            <div className="p-8 relative" data-aos="zoom-in">
+            <h3 className="text-xl md:text-3xl text-gray-600 font-bold">
+              User Name
+            </h3>
+
+            <div className="p-8 relative">
               <FaQuoteLeft className="absolute left-0 top-0 text-2xl text-orange-600" />
-              <p className="text-gray-600 font-medium">
+              <p className="text-gray-600 md:font-medium">
                 From the charming Victorian-era homes adorned with ornate
                 detailing to the minimalist modernist dwellings characterized by
                 clean lines and open spaces, every residential house reflects

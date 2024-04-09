@@ -33,12 +33,12 @@ function ViewProperty() {
   } = details;
 
   return (
-    <div className="py-4 space-y-4 p-4 rounded-2xl border-[1px] border-gray-300">
+    <div className="py-4 space-y-4 p-4 rounded-2xl border-[1px] border-gray-300 px-4">
       <Helmet>
         <title>View Details - {id}</title>
       </Helmet>
       <img
-        className="w-full h-[60vh] rounded-xl"
+        className="w-full md:h-[60vh] rounded-xl"
         data-aos="zoom-in"
         src={cover_image}
         alt=""
@@ -67,17 +67,17 @@ function ViewProperty() {
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       >
-        <h4 className="text-xl font-semibold">Facilities:</h4>
+        <h4 className="md:text-xl font-semibold">Facilities:</h4>
         <ul className="ml-8 mt-2 space-y-2 text-gray-600">
-          <li className="font-medium list-disc">{facilities?.[0]}</li>
-          <li className="font-medium list-disc">{facilities?.[1]}</li>
-          <li className="font-medium list-disc">{facilities?.[2]}</li>
-          <li className="font-medium list-disc">{facilities?.[3]}</li>
-          <li className="font-medium list-disc">{facilities?.[4]}</li>
+          <li className="md:font-medium list-disc">{facilities?.[0]}</li>
+          <li className="md:font-medium list-disc">{facilities?.[1]}</li>
+          <li className="md:font-medium list-disc">{facilities?.[2]}</li>
+          <li className="md:font-medium list-disc">{facilities?.[3]}</li>
+          <li className="md:font-medium list-disc">{facilities?.[4]}</li>
         </ul>
       </div>
       <div className="flex items-center justify-between">
-        <span className="font-semibold text-xl" data-aos="fade-right">
+        <span className="font-semibold md:text-xl" data-aos="fade-right">
           <span className="mr-2">Location:</span>
           {location}
         </span>
