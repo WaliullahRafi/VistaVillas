@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
 import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/Home";
-import OurService from "../Pages/OurService";
 import AboutUs from "../Pages/AboutUs";
 import LoginPage from "../Pages/LoginPage";
 import RegisterPage from "../Pages/RegisterPage";
@@ -10,6 +9,7 @@ import Plans from "../Pages/Plans";
 import ViewProperty from "../Pages/ViewProperty";
 import PrivetRoute from "./PrivetRoute";
 import UpdateProfile from "../Pages/UpdateProfile";
+import Review from "../Pages/Review";
 
 const router = createBrowserRouter([
   {
@@ -46,8 +46,8 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/our-service",
-        element: <OurService />,
+        path: "/review",
+        element: <Review />,
       },
       {
         path: "/about-us",

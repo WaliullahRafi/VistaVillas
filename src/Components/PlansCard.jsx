@@ -25,7 +25,7 @@ function PlansCard({ plan }) {
         </span>
         <Link
           to={`/plans/view-property/${id}`}
-          className="btn btn-primary text-white"
+          className="btn bg-gray-600 text-white"
         >
           View Property
         </Link>

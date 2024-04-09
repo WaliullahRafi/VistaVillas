@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { FaUserCircle } from "react-icons/fa";
 import { AuthContext } from "../Provider/AuthProvider";
+import { FaUser } from "react-icons/fa";
 
 function Navbar() {
   const navLinks = (
@@ -13,10 +13,10 @@ function Navbar() {
         <NavLink to="/plans">Plans</NavLink>
       </li>
       <li>
-        <NavLink to="/our-service">Our Service</NavLink>
+        <NavLink to="/about-us">About Us</NavLink>
       </li>
       <li>
-        <NavLink to="/about-us">About Us</NavLink>
+        <NavLink to="/review">Review</NavLink>
       </li>
     </>
   );
@@ -78,10 +78,16 @@ function Navbar() {
               className="btn btn-ghost btn-circle avatar"
             >
               <div className="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-                />
+                {user ? (
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src={user?.photoURL}
+                  />
+                ) : (
+                  <span className="text-xl absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                    <FaUser />
+                  </span>
+                )}
               </div>
             </div>
             <ul

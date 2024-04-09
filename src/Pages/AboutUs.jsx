@@ -10,7 +10,7 @@ function AboutUs() {
         <title>About Us</title>
       </Helmet>
       <div className="hero-content flex-col lg:flex-row">
-        <img src={Img} className="rounded-lg shadow-2xl w-[30rem] h-[30rem]" />
+        <img src={Img} className="rounded-lg shadow-2xl w-[25rem] h-[30rem]" />
         <div className="ml-12">
           <h1 className="text-5xl font-bold leading-[140%]">
             Our Commitment: <br />

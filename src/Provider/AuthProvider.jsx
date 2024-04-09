@@ -40,11 +40,6 @@ function AuthProvider({ children }) {
     return signInWithPopup(auth, githubProvider);
   };
 
-  const updateUserProfile = () => {
-    setLoading(true);
-    return updateProfile(auth.currentUser);
-  };
-
   const logOutUser = () => {
     setLoading(true);
     return signOut(auth);
@@ -67,7 +62,6 @@ function AuthProvider({ children }) {
     loginUser,
     logOutUser,
     loading,
-    updateUserProfile,
     signInGoogle,
     signInWithGithub,
   };
