@@ -6,7 +6,7 @@ function PlansCard({ plan }) {
   const { id, cover_image, estate_title, segment_name, price, location } = plan;
 
   return (
-    <div className="py-4 space-y-4 p-4 rounded-2xl border-[1px] border-gray-300">
+    <div className="py-4 space-y-4 p-4 rounded-2xl border-[1px] border-orange-600" data-aos="zoom-in">
       <img className="w-full h-[15rem] rounded-xl" src={cover_image} alt="" />
       <div className="flex items-center gap-8">
         <h3 className="text-xl font-semibold text-gray-400 flex items-center gap-1">

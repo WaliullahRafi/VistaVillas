@@ -10,7 +10,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
-  const [registerError, setRegisterError] = useState("");
 
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -22,8 +21,6 @@ function RegisterPage() {
     const email = form.get("email");
     const password = form.get("password");
     console.log(name, email, password);
-
-    // setRegisterError("");
 
     if (password.length < 6) {
       toast.warn("Password should be 6 characters or longer");
@@ -58,12 +55,16 @@ function RegisterPage() {
         <title>Registration - page</title>
       </Helmet>
       <div className="hero-content flex-col">
-        <div className="text-center">
+        <div className="text-center" data-aos="fade-down">
           <h1 className="text-5xl font-bold">Register Now !</h1>
           <p className="py-6">Please enter your details</p>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form onSubmit={handleRegister} className="card-body">
+          <form
+            onSubmit={handleRegister}
+            className="card-body"
+            data-aos="zoom-in"
+          >
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>
@@ -121,7 +122,7 @@ function RegisterPage() {
               </div>
               <label className="label">
                 <a href="#" className="label-text-alt link link-hover">
-                  {registerError}
+                  Forgot Password?
                 </a>
               </label>
             </div>

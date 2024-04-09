@@ -4,19 +4,19 @@ import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded list-none mt-12">
-      <nav className="grid grid-flow-col gap-4">
+      <nav className="grid grid-flow-col gap-8" data-aos="fade-down">
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/our-service">Our Service</NavLink>
+          <NavLink to="/plans">Plans</NavLink>
         </li>
         <li>
-          <NavLink to="/about-us">About Us</NavLink>
+          <NavLink to="/review">Review</NavLink>
         </li>
       </nav>
       <nav>
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid grid-flow-col gap-4" data-aos="zoom-in">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"

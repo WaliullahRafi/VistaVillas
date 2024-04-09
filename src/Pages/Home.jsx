@@ -8,9 +8,9 @@ import Review from "./Review";
 function Home() {
   return (
     <div>
-      {/* <Helmet>
-        <title>VistaVillas | Home - page</title>
-      </Helmet> */}
+      <Helmet>
+        <title>Home page</title>
+      </Helmet>
       <Hero />
       <Plans />
       <Review />

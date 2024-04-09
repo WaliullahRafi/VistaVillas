@@ -10,8 +10,8 @@ function AboutUs() {
         <title>About Us</title>
       </Helmet>
       <div className="hero-content flex-col lg:flex-row">
-        <img src={Img} className="rounded-lg shadow-2xl w-[25rem] h-[30rem]" />
-        <div className="ml-12">
+        <img src={Img} className="rounded-lg shadow-2xl w-[25rem] h-[30rem]" data-aos="fade-right" />
+        <div className="ml-12" data-aos="fade-left">
           <h1 className="text-5xl font-bold leading-[140%]">
             Our Commitment: <br />
             Elevating the Standard of Residential Living
@@ -24,7 +24,7 @@ function AboutUs() {
             Welcome to [VistaVillas] - where your journey to home ownership
             begins.
           </p>
-          <Link to="/plans" className="btn btn-primary">
+          <Link to="/plans" className="btn bg-blue-600 text-white outline-none border-none">
             Get Started
           </Link>
         </div>

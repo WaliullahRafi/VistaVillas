@@ -62,14 +62,20 @@ function Navbar() {
             {navLinks}
           </ul>
         </div>
-        <Link to="/" className="text-2xl font-bold">
+        <Link
+          to="/"
+          className="text-2xl font-bold text-orange-600"
+          data-aos="fade-right"
+        >
           VistaVillas
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-4">{navLinks}</ul>
+        <ul className="menu menu-horizontal px-1 gap-4" data-aos="fade-down">
+          {navLinks}
+        </ul>
       </div>
-      <div className="navbar-end gap-4">
+      <div className="navbar-end gap-4" data-aos="fade-left">
         <div className="flex-none z-20">
           <div className="dropdown dropdown-end">
             <div

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -23,7 +24,7 @@ function Hero() {
         <div className="hero min-h-[60vh] rounded-2xl overflow-hidden bg-[url('./assets/img1.jpg')] bg-no-repeat bg-cover">
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-[50rem]">
+            <div className="max-w-[50rem]" data-aos="zoom-in">
               <h1 className="mb-5 text-5xl font-bold leading-[140%]">
                 VistaVillas: Navigating Quaint Residential Communities and Homes
               </h1>
@@ -34,7 +35,12 @@ function Hero() {
                 the tranquility of lakeside luxuries, where every sunset is a
                 celebration of natural beauty.
               </p>
-              <button className="btn btn-primary">Get Started</button>
+              <Link
+                to="/plans"
+                className="btn bg-blue-600 text-white outline-none border-none"
+              >
+                Get Started
+              </Link>
             </div>
           </div>
         </div>
@@ -55,7 +61,12 @@ function Hero() {
                 curated collection of homes that exude sophistication and style,
                 offering an unparalleled urban experience
               </p>
-              <button className="btn btn-primary">Get Started</button>
+              <Link
+                to="/plans"
+                className="btn bg-blue-600 text-white outline-none border-none"
+              >
+                Get Started
+              </Link>
             </div>
           </div>
         </div>
@@ -76,7 +87,12 @@ function Hero() {
                 that embody the essence of neighborly warmth and community
                 spirit
               </p>
-              <button className="btn btn-primary">Get Started</button>
+              <Link
+                to="/plans"
+                className="btn bg-blue-600 text-white outline-none border-none"
+              >
+                Get Started
+              </Link>
             </div>
           </div>
         </div>

@@ -26,26 +26,27 @@ function Review() {
       className="mySwiper"
     >
       <Helmet>
-        <title>VistaVillas - Review</title>
+        <title>Review page</title>
       </Helmet>
 
       <SwiperSlide>
         <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
-          <div className="p-12 bg-gray-300 text-center space-y-8">
-            <img
-              className="w-[40rem] h-[20rem] rounded-2xl"
-              src={Rev1}
-              alt=""
-            />
+          <div
+            className="p-12 bg-base-100 text-center space-y-8"
+            data-aos="fade-right"
+          >
+            <div className="w-[16rem] h-[20rem]">
+              <img className="w-full h-full rounded-2xl" src={Rev1} alt="" />
+            </div>
             <h2 className="text-xl font-semibold text-orange-600">
               Daniel Anderson
             </h2>
           </div>
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-700">
+            <h2 className="text-4xl font-bold text-gray-700" data-aos="fade-down">
               Customer Reviews
             </h2>
-            <div className="p-8 relative">
+            <div className="p-8 relative" data-aos="zoom-in">
               <FaQuoteLeft className="absolute left-0 top-0 text-2xl text-orange-600" />
               <p className="text-gray-600 font-medium">
                 At its core, VistaVillas offers a sanctuary of comfort and
@@ -61,21 +62,22 @@ function Review() {
 
       <SwiperSlide>
         <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
-          <div className="p-12 bg-gray-300 text-center space-y-8">
-            <img
-              className="w-[40rem] h-[20rem] rounded-2xl"
-              src={Rev2}
-              alt=""
-            />
+          <div
+            className="p-12 bg-base-100 text-center space-y-8"
+            data-aos="fade-right"
+          >
+            <div className="w-[16rem] h-[20rem]">
+              <img className="w-full h-full rounded-2xl" src={Rev2} alt="" />
+            </div>
             <h2 className="text-xl font-semibold text-orange-600">
               Michael Smith
             </h2>
           </div>
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-700">
+            <h2 className="text-4xl font-bold text-gray-700" data-aos="fade-down">
               Customer Reviews
             </h2>
-            <div className="p-8 relative">
+            <div className="p-8 relative" data-aos="zoom-in">
               <FaQuoteLeft className="absolute left-0 top-0 text-2xl text-orange-600" />
               <p className="text-gray-600 font-medium">
                 From Mediterranean-inspired villas adorned with intricate
@@ -92,21 +94,22 @@ function Review() {
 
       <SwiperSlide>
         <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
-          <div className="p-12 bg-gray-300 text-center space-y-8">
-            <img
-              className="w-[40rem] h-[20rem] rounded-2xl"
-              src={Rev3}
-              alt=""
-            />
+          <div
+            className="p-12 bg-base-100 text-center space-y-8"
+            data-aos="fade-right"
+          >
+            <div className="w-[16rem] h-[20rem]">
+              <img className="w-full h-full rounded-2xl" src={Rev3} alt="" />
+            </div>
             <h2 className="text-xl font-semibold text-orange-600">
               Sophia Rodriguez
             </h2>
           </div>
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-700">
+            <h2 className="text-4xl font-bold text-gray-700" data-aos="fade-down">
               Customer Reviews
             </h2>
-            <div className="p-8 relative">
+            <div className="p-8 relative" data-aos="zoom-in">
               <FaQuoteLeft className="absolute left-0 top-0 text-2xl text-orange-600" />
               <p className="text-gray-600 font-medium">
                 From the charming Victorian-era homes adorned with ornate
@@ -125,22 +128,3 @@ function Review() {
 }
 
 export default Review;
-
-{
-  /* <div className="flex items-center justify-center bg-base-200 min-h-[70vh] p-40 gap-12">
-<div className="p-12 bg-gray-300 text-center space-y-8">
-  <img className="w-[40rem] rounded-2xl" src={Rev1} alt="" />
-  <h2 className="text-xl font-semibold">ElysianEden</h2>
-</div>
-<div className="space-y-6">
-  <h2 className="text-3xl font-bold">Customer Reviews</h2>
-  <div className="p-8 relative">
-    <FaQuoteLeft className="absolute left-0 top-0 text-2xl" />
-    <p className="text-gray-600 font-medium">
-    At its core, VistaVillas offers a sanctuary of comfort and serenity amidst the hustle and bustle of modern life, providing a refuge where individuals can retreat, recharge, and rejuvenate their spirits. Whether seeking solace in the quietude of a secluded countryside cottage or basking in the vibrant energy of a bustling urban loft, residents of residential houses find sanctuary in the familiar embrace of their homes
-    </p>
-    <FaQuoteRight className="absolute right-0 bottom-0 text-2xl" />
-  </div>
-</div>
-</div> */
-}

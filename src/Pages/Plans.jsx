@@ -16,9 +16,9 @@ function Plans() {
   return (
     <div className="py-12 space-y-8">
       <Helmet>
-        <title>Plans - page</title>
+        <title>Plans page</title>
       </Helmet>
-      <div>
+      <div data-aos="fade-right">
         {" "}
         <span className="text-xl font-semibold text-orange-600">Our Plans</span>
         <h2 className="text-4xl font-bold text-blue-600 mt-2">

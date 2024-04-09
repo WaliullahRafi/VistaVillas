@@ -56,6 +56,11 @@ function AuthProvider({ children }) {
     };
   }, []);
 
+  const updateUserProfile = () => {
+    setLoading(true);
+    return updateProfile(auth.currentUser); // updateProfile does not work, i Couldn't make this
+  };
+
   const authInfo = {
     user,
     createUser,
@@ -64,6 +69,7 @@ function AuthProvider({ children }) {
     loading,
     signInGoogle,
     signInWithGithub,
+    updateUserProfile,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
