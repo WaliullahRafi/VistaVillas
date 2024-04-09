@@ -10,6 +10,7 @@ import ViewProperty from "../Pages/ViewProperty";
 import PrivetRoute from "./PrivetRoute";
 import UpdateProfile from "../Pages/UpdateProfile";
 import Review from "../Pages/Review";
+import UserProfile from "../Pages/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -30,8 +31,20 @@ const router = createBrowserRouter([
         element: <RegisterPage />,
       },
       {
+        path: "/user-profile",
+        element: (
+          <PrivetRoute>
+            <UserProfile />
+          </PrivetRoute>
+        ),
+      },
+      {
         path: "/update-profile",
-        element: <UpdateProfile />,
+        element: (
+          <PrivetRoute>
+            <UpdateProfile />
+          </PrivetRoute>
+        ),
       },
       {
         path: "/plans",

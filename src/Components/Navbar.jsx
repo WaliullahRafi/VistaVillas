@@ -36,7 +36,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar bg-base-100 py-6">
+    <div className="navbar bg-base-100 py-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -75,7 +75,8 @@ function Navbar() {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle avatar"
+              className="btn btn-ghost btn-circle avatar flex items-center justify-center tooltip"
+              data-tip={user?.displayName}
             >
               <div className="w-10 rounded-full">
                 {user ? (
@@ -95,7 +96,9 @@ function Navbar() {
               className="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 space-y-4"
             >
               <li>
-                <a className="justify-between">User Profile</a>
+                <NavLink to="/user-profile" className="justify-between">
+                  User Profile
+                </NavLink>
               </li>
               <li>
                 <NavLink to="/update-profile">Update Profile</NavLink>

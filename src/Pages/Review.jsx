@@ -30,7 +30,7 @@ function Review() {
       </Helmet>
 
       <SwiperSlide>
-        <div className="flex items-center justify-center bg-base-200 min-h-[70vh] p-40 gap-12">
+        <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
           <div className="p-12 bg-gray-300 text-center space-y-8">
             <img
               className="w-[40rem] h-[20rem] rounded-2xl"
@@ -60,7 +60,7 @@ function Review() {
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className="flex items-center justify-center bg-base-200 min-h-[70vh] p-40 gap-12">
+        <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
           <div className="p-12 bg-gray-300 text-center space-y-8">
             <img
               className="w-[40rem] h-[20rem] rounded-2xl"
@@ -91,7 +91,7 @@ function Review() {
       </SwiperSlide>
 
       <SwiperSlide>
-        <div className="flex items-center justify-center bg-base-200 min-h-[70vh] p-40 gap-12">
+        <div className="flex items-center justify-center bg-base-200 p-20 gap-12">
           <div className="p-12 bg-gray-300 text-center space-y-8">
             <img
               className="w-[40rem] h-[20rem] rounded-2xl"
