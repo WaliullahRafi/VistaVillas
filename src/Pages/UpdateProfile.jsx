@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Helmet } from "react-helmet";
 import { AuthContext } from "../Provider/AuthProvider";
 
 function UpdateProfile() {
@@ -23,9 +22,6 @@ function UpdateProfile() {
 
   return (
     <div className="hero py-12">
-      <Helmet>
-        <title>Update Profile</title>
-      </Helmet>
       <div className="hero-content flex-col">
         <div className="text-center" data-aos="fade-down">
           <h1 className="text-3xl md:text-5xl font-bold">Update Profile !</h1>

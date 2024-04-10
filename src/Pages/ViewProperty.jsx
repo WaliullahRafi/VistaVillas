@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { FaDollarSign } from "react-icons/fa6";
-import { Helmet } from "react-helmet";
 
 function ViewProperty() {
   const { id } = useParams();
@@ -34,9 +33,6 @@ function ViewProperty() {
 
   return (
     <div className="py-4 space-y-4 p-4 rounded-2xl border-[1px] border-gray-300 px-4">
-      <Helmet>
-        <title>View Details - {id}</title>
-      </Helmet>
       <img
         className="w-full md:h-[60vh] rounded-xl"
         data-aos="zoom-in"

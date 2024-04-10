@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { HiEye } from "react-icons/hi";
 import { HiEyeOff } from "react-icons/hi";
 import { AuthContext } from "../Provider/AuthProvider";
-import { Helmet } from "react-helmet";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -74,9 +73,6 @@ function LoginPage() {
 
   return (
     <div className="hero py-12">
-      <Helmet>
-        <title>Login - Page</title>
-      </Helmet>
       <div className="hero-content flex-col">
         <div className="text-center" data-aos="fade-down">
           <h1 className="text-3xl md:text-5xl font-bold">Login Now !</h1>

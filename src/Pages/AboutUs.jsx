@@ -1,14 +1,10 @@
 import React from "react";
 import Img from "../assets/img2.jpg";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 function AboutUs() {
   return (
     <div className="hero min-h-[60vh]">
-      <Helmet>
-        <title>About Us</title>
-      </Helmet>
       <div className="hero-content flex-col lg:flex-row">
         <img src={Img} className="rounded-lg shadow-2xl md:w-[25rem] h-[30rem]" data-aos="fade-right" />
         <div className="md:ml-12" data-aos="fade-left">

@@ -1,15 +1,11 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
-import { Helmet } from "react-helmet";
 
 function UserProfile() {
   const { user } = useContext(AuthContext);
 
   return (
     <div className="flex items-center justify-center w-full h-[70vh] px-4">
-      <Helmet>
-        <title>User Profile</title>
-      </Helmet>
       <div className="w-[50rem] rounded-3xl text-center flex flex-col items-center justify-center bg-white shadow-2xl p-12 relative">
         <img
           className="w-[10rem] h-[10rem] rounded-full bg-red-500 absolute -top-20"

@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { HiEye } from "react-icons/hi";
 import { HiEyeOff } from "react-icons/hi";
 import { AuthContext } from "../Provider/AuthProvider";
-import { Helmet } from "react-helmet";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -51,9 +50,6 @@ function RegisterPage() {
 
   return (
     <div className="hero">
-      <Helmet>
-        <title>Registration - page</title>
-      </Helmet>
       <div className="flex flex-col">
         <div className="text-center" data-aos="fade-down">
           <h1 className="text-3xl md:text-5xl font-bold">Register Now !</h1>

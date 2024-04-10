@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import PlansCard from "../Components/PlansCard";
-import { Helmet } from "react-helmet";
 
 function Plans() {
   const [plans, setPlans] = useState([]);
@@ -15,9 +14,6 @@ function Plans() {
 
   return (
     <div className="py-12 space-y-8">
-      <Helmet>
-        <title>Plans page</title>
-      </Helmet>
       <div data-aos="fade-right">
         {" "}
         <span className="md:text-xl font-semibold text-orange-600">

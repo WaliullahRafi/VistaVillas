@@ -8,7 +8,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { Helmet } from "react-helmet";
 
 function Review() {
   return (
@@ -25,9 +24,6 @@ function Review() {
       modules={[Navigation, Pagination, Autoplay]}
       className="mySwiper"
     >
-      <Helmet>
-        <title>Review page</title>
-      </Helmet>
 
       <SwiperSlide>
         <div className="grid md:grid-cols-2 items-center justify-center p-20 h-[70vh] w-full text-center my-14 my:mt-0" data-aos="zoom-in">
