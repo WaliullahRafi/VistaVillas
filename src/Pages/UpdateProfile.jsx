@@ -11,7 +11,7 @@ function UpdateProfile() {
     const image = form.get("image");
     console.log(name, image);
 
-    updateUserProfile(name, image) // it does not work, i Couldn't make this
+    updateUserProfile(name, image) // it does not work, i Couldn't make this work
       .then(() => {
         console.log("updated successfully");
       })

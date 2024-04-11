@@ -50,7 +50,7 @@ function Hero() {
         <div className="hero min-h-[60vh] rounded-2xl overflow-hidden bg-[url('./assets/img2.jpg')] bg-no-repeat bg-cover">
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-[50rem]">
+            <div className="max-w-[50rem]" data-aos="zoom-in">
               <h1 className="mb-5 text-2xl md:text-5xl font-bold leading-[140%]">
                 VistaVillas: Immersing Yourself in the Beauty of Residential
                 Life Amongst the Hills
@@ -76,7 +76,7 @@ function Hero() {
         <div className="hero min-h-[60vh] rounded-2xl overflow-hidden bg-[url('./assets/img3.jpg')] bg-no-repeat bg-cover">
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-neutral-content">
-            <div className="max-w-[50rem]">
+            <div className="max-w-[50rem]" data-aos="zoom-in">
               <h1 className="mb-5 text-2xl md:text-5xl font-bold leading-[140%]">
                 VistaVillas: Exploring the Beauty and Grandeur of Alpine
                 Residences

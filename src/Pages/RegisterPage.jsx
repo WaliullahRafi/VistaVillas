@@ -40,7 +40,9 @@ function RegisterPage() {
       .then((res) => {
         console.log(res.user);
         navigate("/");
-        toast.success("Successfully Registered Account");
+        setTimeout(() => {
+          toast.success("Successfully Registered Account");
+        }, 1000);
       })
       .catch((error) => {
         console.error(error);
@@ -79,7 +81,7 @@ function RegisterPage() {
               </label>
               <input
                 name="image"
-                type="text"
+                type="url"
                 placeholder="image"
                 className="input input-bordered"
                 required

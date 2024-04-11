@@ -41,7 +41,9 @@ function LoginPage() {
       .then((res) => {
         console.log(res.user);
         navigate(location?.state ? location.state : "/");
-        toast.success("Successfully Logged In");
+        setTimeout(() => {
+          toast.success("Successfully Logged In");
+        }, 1000);
       })
       .catch((error) => {
         console.error(error);
@@ -54,6 +56,9 @@ function LoginPage() {
       .then((res) => {
         console.log(res.user);
         navigate(location?.state ? location.state : "/");
+        setTimeout(() => {
+          toast.success("Successfully Logged In");
+        }, 1000);
       })
       .catch((error) => {
         console.error(error);
@@ -65,6 +70,7 @@ function LoginPage() {
       .then((res) => {
         console.log(res.user);
         navigate(location?.state ? location.state : "/");
+        toast.success("Successfully Logged In");
       })
       .catch((error) => {
         console.error(error);

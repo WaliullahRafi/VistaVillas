@@ -3,6 +3,9 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { FaUser } from "react-icons/fa";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function Navbar() {
   const navLinks = (
     <>
@@ -27,8 +30,10 @@ function Navbar() {
   const handleLogOut = () => {
     logOutUser()
       .then(() => {
-        console.log("Logged out successfully");
         navigate("/login-page");
+        setTimeout(() => {
+          toast.success("Logged out successfully");
+        }, 1000);
       })
       .catch((error) => {
         console.error(error);
@@ -124,6 +129,7 @@ function Navbar() {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

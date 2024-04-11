@@ -2,15 +2,17 @@ import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Helmet } from "react-helmet";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Helmet } from "react-helmet";
 AOS.init();
 
 function Root() {
   const location = useLocation();
-  console.log(location);
 
   return (
     <div className="max-w-[1400px] mx-auto">
@@ -20,6 +22,7 @@ function Root() {
       <Navbar />
       <Outlet />
       <Footer />
+      <ToastContainer />
     </div>
   );
 }
