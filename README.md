@@ -27,6 +27,7 @@ React npm package I used in this project__
 7. React Toastify,
 
 
-npm Packages I used for challenge part in this project__
-1. Swiper Js,
-2. AOS Package,
+Features_
+1. I have used slider,
+2. login/register features,
+3. review section
